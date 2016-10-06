@@ -101,12 +101,14 @@ if (isset ( $feedbackmessage )) {
 }
 ?>
 
-<h3>我的二维码</h3>
+<h3>
+          我的二维码 <a
+            style="font-size: 14px; display: inline-block; margin-left: 25px; padding: 5px 12px; background-color: #eee; position: relative; top: -3px;"
+            href="myaccount.php">我的钻戒</a>
+        </h3>
         <a
           style="font-size: 14px; display: inline-block; margin-left: 25px; padding: 5px 12px; background-color: #eee; position: relative; top: -3px;"
-          href="manageaccount.php">修改用户名密码</a> <a
-          style="font-size: 14px; display: inline-block; margin-left: 25px; padding: 5px 12px; background-color: #eee; position: relative; top: -3px;"
-          href="myQrcode.php">我的二维码</a>
+          href="manageaccount.php">修改用户名密码</a>
 
 
 <?php
