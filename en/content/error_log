@@ -1,0 +1,6 @@
+[06-Jul-2016 12:39:14 UTC] PHP Warning:  include(../manage/MethodGet.php): failed to open stream: No such file or directory in /home/sihui/public_html/limei/includes/connection.php on line 1
+[06-Jul-2016 12:39:14 UTC] PHP Warning:  include(): Failed opening '../manage/MethodGet.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sihui/public_html/limei/includes/connection.php on line 1
+[06-Jul-2016 12:39:14 UTC] PHP Warning:  include(../manage/MethodGet.php): failed to open stream: No such file or directory in /home/sihui/public_html/limei/includes/connection.php on line 1
+[06-Jul-2016 12:39:14 UTC] PHP Warning:  include(): Failed opening '../manage/MethodGet.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sihui/public_html/limei/includes/connection.php on line 1
+[01-Aug-2016 14:28:19 UTC] PHP Warning:  include(../manage/MethodGet.php): failed to open stream: No such file or directory in /home/sihui/public_html/limei/includes/connection.php on line 1
+[01-Aug-2016 14:28:19 UTC] PHP Warning:  include(): Failed opening '../manage/MethodGet.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/sihui/public_html/limei/includes/connection.php on line 1

@@ -1,0 +1,196 @@
+a {
+	color: #000;
+}
+.diamond-thumb {
+	margin-top: 10px;
+	text-align: center;
+}
+.diamond-thumb img {
+	width: 100%;
+	/*max-width: 100px;*/
+	cursor: pointer;
+	border: solid 1px #eee;
+	border-radius: 5px;
+}
+.diamond-thumb img:hover {
+	border: solid 1px #ccc;
+	box-shadow: 3px 3px 10px #ccc;
+}
+.diamond-detail-separator {
+	width: 1px;
+	height: 500px;
+	background-color: #e3e3e3;
+	margin-left: auto;
+	margin-right: auto;
+}
+.diamond-detail-separator1 {
+
+	height: 1px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.diamond-detail-img {
+	border: solid 1px #eee;
+	border-radius: 5px;
+	padding: 10px;
+}
+.diamond-detail-body {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.diamond-detail-lab-logo-wrapper {
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	width: 212px;
+	/*height: 72px;*/
+	background-color: #fcfcfc;
+}
+.diamond-detail-lab-logo {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 200px;
+	height: 60px;
+	margin: 5px;
+}
+.diamond-detail-description {
+	color: #666;
+}
+.diamond-detail-description .row {
+	margin-top: 10px;
+}
+.diamond-detail-figure-ul {
+	list-style: none;
+	padding-left: 0;
+}
+.diamond-detail-figure-ul li {
+	float: left;
+	padding: 0 5px 0 5px;
+	border-bottom: solid 1px #888;
+}
+.diamond-detail-figure-ul li.selected {
+	border-bottom: solid 2px #111111;
+	font-weight: bold;
+}
+
+.diamond-recommendation-thumb {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+.diamond-recommendation-thumb img {
+	width: 100px;
+}
+#diamond-recommendation-form {
+}
+
+.diamond-recommendation-form-title {
+	height: 25px;
+	border-bottom: solid 1px #eee;
+}
+.diamond-recommendation-form-title>div {
+	float: right;
+	margin: 5px 10px 0 0;
+	cursor: pointer;
+}
+#diamond-recommendation-form tr {
+	background-color: transparent;
+}
+#diamond-recommendation-form td {
+	border: none;
+}
+.diamond-recommendation-wrapper {
+    width: 720px;
+    background-color: #fff;
+}
+.diamond-recommendation-wrapper td {
+    width: 20%;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+}
+.diamond-recommendation-title {
+    height: 1px;
+    background-color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.diamond-recommendation-title>span {
+    background-color: white;
+    position: relative;
+    top: -0.5em;
+    padding: 0 5px 5px 5px;
+}
+
+.btn {
+	padding: 5px 10px 5px 10px;
+}
+.noborder {
+	border: none;
+}
+.noborder legend {
+	font-weight: bold;
+	padding: 10px 0 10px 0;
+	text-decoration: underline;
+}
+.noborder legend a {
+    color: #333;
+}
+.noborder>div {
+	padding-left: 20px;
+}
+
+
+.diamond-slider-container {
+	width: 100%;
+
+}
+.slider {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.slider-label {
+	color: #555;
+	text-align: left;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+/*
+.ui-slider {
+	height: 3px !important;
+}
+.ui-slider-range {
+	height: 3px !important;
+}
+*/
+.slider-input-container {
+	padding-top: 5px;
+}
+.slider-value-low {
+	float: left;
+	width: 50px;
+}
+.slider-value-high {
+	float: right;
+	width: 50px;
+}
+.frontpage-rings-container img {
+	border: solid 1px #eee;
+	border-radius: 5px;
+	margin: 5px;
+	box-shadow: 1px 2px 5px #ddd;
+}
+.frontpage-textbox-container {
+	height: 180px;
+	padding: 0 20px 0 20px;
+}
+@media screen and (max-width: 768px) {
+	.frontpage-textbox-container {
+		height: 110px;
+	}
+}
