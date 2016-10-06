@@ -116,7 +116,7 @@ if ($r_u ['qrcode']) {
 	?>
 			<a id="qr_image" href="../admin/qrcode/<?php echo $row['qrcode'] ?>" target="_blank">查看</a><br />
         <div class="history-choice">
-          <img src="../admin/qrcode/<?php echo $r_u['qrcode']; ?>" class="demo-pic" />
+          <img src="../_admin/qrcode/<?php echo $r_u['qrcode']; ?>" class="demo-pic" />
           <div class="dia-para-box">
             <?php
 	$sql_history = 'SELECT wechat_name FROM clients_list WHERE referee = "' . $r_u ['id'] . '"';
