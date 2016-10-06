@@ -141,8 +141,6 @@ if (isset ( $feedbackmessage )) {
           href="myQrcode.php">我的二维码</a><a
           style="font-size: 14px; display: inline-block; margin-left: 25px; padding: 5px 12px; background-color: #eee; position: relative; top: -3px;"
           href="manageaccount.php">修改用户名密码</a>
-
-
 <?php
 $userhistory = 'SELECT * FROM viewing_record WHERE viewer = "' . $userid . '" ORDER BY id DESC';
 $stmt_history = $conn->query ( $userhistory );
