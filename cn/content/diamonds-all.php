@@ -1,159 +1,142 @@
 <div class="themaincontent">
-<div class="themaincontentinner">
-
-
-
-
-<div id="filter_box">
-
-<div class="filter-box-leftside">
-
-<div class="filter_line" >
-<span class="filter_title" id="filter_title_shape">形状</span>
-<ul class="fileber_shape_outer" >
-<li class="filter_shape" id="filter_shapeBR" onclick="filter_shape('BR')"><img src="../images/site_elements/icons/01.gif" /></li>
-<li class="filter_shape" id="filter_shapePS" onclick="filter_shape('PS')"><img src="../images/site_elements/icons/02.gif" /></li>
-<li class="filter_shape" id="filter_shapePR" onclick="filter_shape('PR')"><img src="../images/site_elements/icons/03.gif" /></li>
-<li class="filter_shape" id="filter_shapeHS" onclick="filter_shape('HS')"><img src="../images/site_elements/icons/08.gif" /></li>
-<li class="filter_shape" id="filter_shapeMQ" onclick="filter_shape('MQ')"><img src="../images/site_elements/icons/05.gif" /></li>
-<li class="filter_shape" id="filter_shapeOV" onclick="filter_shape('OV')"><img src="../images/site_elements/icons/11.gif" /></li>
-<li class="filter_shape" id="filter_shapeEM" onclick="filter_shape('EM')"><img src="../images/site_elements/icons/10.gif" /></li>
-<li class="filter_shape" id="filter_shapeRAD" onclick="filter_shape('RAD')"><img src="../images/site_elements/icons/06.gif" /></li>
-<li class="filter_shape" id="filter_shapeCU" onclick="filter_shape('CU')"><img src="../images/site_elements/icons/12.gif" /></li>
-</ul>
+  <div class="themaincontentinner">
+    <div id="filter_box">
+      <div class="filter-box-leftside">
+        <div class="filter_line">
+          <span class="filter_title" id="filter_title_shape">形状</span>
+          <ul class="fileber_shape_outer">
+            <li class="filter_shape" id="filter_shapeBR" onclick="filter_shape('BR')"><img
+              src="../images/site_elements/icons/01.gif" /></li>
+            <li class="filter_shape" id="filter_shapePS" onclick="filter_shape('PS')"><img
+              src="../images/site_elements/icons/02.gif" /></li>
+            <li class="filter_shape" id="filter_shapePR" onclick="filter_shape('PR')"><img
+              src="../images/site_elements/icons/03.gif" /></li>
+            <li class="filter_shape" id="filter_shapeHS" onclick="filter_shape('HS')"><img
+              src="../images/site_elements/icons/08.gif" /></li>
+            <li class="filter_shape" id="filter_shapeMQ" onclick="filter_shape('MQ')"><img
+              src="../images/site_elements/icons/05.gif" /></li>
+            <li class="filter_shape" id="filter_shapeOV" onclick="filter_shape('OV')"><img
+              src="../images/site_elements/icons/11.gif" /></li>
+            <li class="filter_shape" id="filter_shapeEM" onclick="filter_shape('EM')"><img
+              src="../images/site_elements/icons/10.gif" /></li>
+            <li class="filter_shape" id="filter_shapeRAD" onclick="filter_shape('RAD')"><img
+              src="../images/site_elements/icons/06.gif" /></li>
+            <li class="filter_shape" id="filter_shapeCU" onclick="filter_shape('CU')"><img
+              src="../images/site_elements/icons/12.gif" /></li>
+          </ul>
+        </div>
+        <div class="filter_line">
+          <span class="filter_title">颜色</span>
+          <ul>
+            <li class="filter_color" id="filter_colorD" onclick="filter_color('D')">D</li>
+            <li class="filter_color" id="filter_colorE" onclick="filter_color('E')">E</li>
+            <li class="filter_color" id="filter_colorF" onclick="filter_color('F')">F</li>
+            <li class="filter_color" id="filter_colorG" onclick="filter_color('G')">G</li>
+            <li class="filter_color" id="filter_colorH" onclick="filter_color('H')">H</li>
+            <li class="filter_color" id="filter_colorI" onclick="filter_color('I')">I</li>
+            <li class="filter_color" id="filter_colorJ" onclick="filter_color('J')">J</li>
+            <li class="filter_color" id="filter_colorK" onclick="filter_color('K')">K</li>
+            <li class="filter_color" id="filter_colorL" onclick="filter_color('L')">L</li>
+            <li class="filter_color" id="filter_colorM" onclick="filter_color('M')">M</li>
+          </ul>
+        </div>
+        <div class="filter_line">
+          <span class="filter_title">钻重</span>
+          <div id="filter_line_weight">
+            <input type="text" id="weight_from" /> - <input type="text" id="weight_to" />
+            <button type="button" id="btn_weight">更新结果</button>
+          </div>
+        </div>
+        <div class="filter_line" id="filter_line_clarity">
+          <span class="filter_title">净度</span>
+          <ul>
+            <li class="filter_clarity" id="filter_clarityFL" onclick="filter_clarity('FL')">FL</li>
+            <li class="filter_clarity" id="filter_clarityIF" onclick="filter_clarity('IF')">IF</li>
+            <li class="filter_clarity" id="filter_clarityWS1" onclick="filter_clarity('WS1')">VVS1</li>
+            <li class="filter_clarity" id="filter_clarityWS2" onclick="filter_clarity('WS2')">VVS2</li>
+            <li class="filter_clarity" id="filter_clarityVS1" onclick="filter_clarity('VS1')">VS1</li>
+            <li class="filter_clarity" id="filter_clarityVS2" onclick="filter_clarity('VS2')">VS2</li>
+            <li class="filter_clarity" id="filter_claritySI1" onclick="filter_clarity('SI1')">SI1</li>
+            <li class="filter_clarity" id="filter_claritySI2" onclick="filter_clarity('SI2')">SI2</li>
+          </ul>
+        </div>
+        <div class="filter_line">
+          <span class="filter_title">价格</span>
+          <div id="filter_line_price">
+            <input type="text" id="price_from" /> - <input type="text" id="price_to" /> (美元)
+            <button type="button" id="btn_price">更新结果</button>
+          </div>
+        </div>
+      </div>
+      <!-- end filterbox leftside -->
+      <div class="filter-box-rightside">
+        <div class="filter_line">
+          <span class="filter_title">切工</span>
+          <ul>
+            <li class="filter_cut" id="filter_cutEX" onclick="filter_cut('EX')">EX</li>
+            <li class="filter_cut" id="filter_cutVG" onclick="filter_cut('VG')">VG</li>
+            <li class="filter_cut" id="filter_cutG" onclick="filter_cut('G')">G</li>
+            <li class="filter_cut" id="filter_cutF" onclick="filter_cut('F')">F</li>
+          </ul>
+        </div>
+        <div class="filter_line">
+          <span class="filter_title">抛光</span>
+          <ul>
+            <li class="filter_polish" id="filter_polishEX" onclick="filter_polish('EX')">EX</li>
+            <li class="filter_polish" id="filter_polishVG" onclick="filter_polish('VG')">VG</li>
+            <li class="filter_polish" id="filter_polishG" onclick="filter_polish('G')">G</li>
+            <li class="filter_polish" id="filter_polishF" onclick="filter_polish('F')">F</li>
+          </ul>
+        </div>
+        <div class="filter_line">
+          <span class="filter_title">对称</span>
+          <ul>
+            <li class="filter_sym" id="filter_symEX" onclick="filter_sym('EX')">EX</li>
+            <li class="filter_sym" id="filter_symVG" onclick="filter_sym('VG')">VG</li>
+            <li class="filter_sym" id="filter_symG" onclick="filter_sym('G')">G</li>
+            <li class="filter_sym" id="filter_symF" onclick="filter_sym('F')">F</li>
+          </ul>
+        </div>
+        <div class="filter_line">
+          <span class="filter_title">证书</span>
+          <ul>
+            <li class="filter_certi" id="filter_certiIGI" onclick="filter_certi('IGI')">IGI</li>
+            <li class="filter_certi" id="filter_certiHRD" onclick="filter_certi('HRD')">HRD</li>
+            <li class="filter_certi" id="filter_certiGIA" onclick="filter_certi('GIA')">GIA</li>
+          </ul>
+        </div>
+        <div class="filter_line" id="filter_line_searchbycertinumber">
+          <span class="filter_title">查询</span> <input type="text" id="numbersearch" placeholder="证书编号/库存编号" />
+          <button type="button" id="btn_certificatenumbersearch" onclick="searchbynumbers()">查询</button>
+        </div>
+      </div>
+      <!-- end filterbox rightside -->
+      <br style="clear: both;" />
+    </div>
+    <!-- end filter box -->
+    <div class="main_contentbox_dia_data" id="diamondscontentbox_data">
+      <div id="tableheader">
+        <p id="listdescription">
+          为您找到 <span id="resulthowmany">0</span> 条结果: <span id="dia-page-selector">第 <span id="diapagenavi">1</span> 页
+          </span>
+          <!--<span id="more">更多》</span>-->
+        </p>
+      </div>
+      <div id="diamondsdata"></div>
+    </div>
+    <!-- end diamondscontentbox -->
+  </div>
+  <!-- end themaincontentinner -->
 </div>
-
-<div class="filter_line">
-<span class="filter_title">颜色</span>
-<ul>
-<li class="filter_color" id="filter_colorD" onclick="filter_color('D')">D</li>
-<li class="filter_color" id="filter_colorE" onclick="filter_color('E')">E</li>
-<li class="filter_color" id="filter_colorF" onclick="filter_color('F')">F</li>
-<li class="filter_color" id="filter_colorG" onclick="filter_color('G')">G</li>
-<li class="filter_color" id="filter_colorH" onclick="filter_color('H')">H</li>
-<li class="filter_color" id="filter_colorI" onclick="filter_color('I')">I</li>
-<li class="filter_color" id="filter_colorJ" onclick="filter_color('J')">J</li>
-<li class="filter_color" id="filter_colorK" onclick="filter_color('K')">K</li>
-<li class="filter_color" id="filter_colorL" onclick="filter_color('L')">L</li>
-<li class="filter_color" id="filter_colorM" onclick="filter_color('M')">M</li>
-</ul>
+<!-- end themaincontent -->
+<div id="loading_indi"
+  style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #FFF; background-color: rgba(255, 255, 255, 0.7); z-index: 6; display: none;">
+  <p
+    style="position: relative; top: 50%; margin-top: -50px; width: 128px; height: 70px; margin-left: auto; margin-right: auto; text-align: center; background-color: #FFF; padding-top: 20px; border-radius: 8px;">
+    <img width="25px" src="../images/site_elements/loadingGraphic.gif" /><br />
+    <span style="position: relative; left: 8px; display: inline-block; margin-top: 12px;">载入中...</span>
+  </p>
 </div>
-
-<div class="filter_line">
-<span class="filter_title">钻重</span>
-<div id="filter_line_weight">
-<input type="text" id="weight_from" /> - <input type="text" id="weight_to" /> <button type="button" id="btn_weight">更新结果</button>
-</div>
-</div>
-
-<div class="filter_line" id="filter_line_clarity">
-<span class="filter_title">净度</span>
-<ul>
-<li class="filter_clarity" id="filter_clarityFL" onclick="filter_clarity('FL')">FL</li>
-<li class="filter_clarity" id="filter_clarityIF" onclick="filter_clarity('IF')">IF</li>
-<li class="filter_clarity" id="filter_clarityWS1" onclick="filter_clarity('WS1')">VVS1</li>
-<li class="filter_clarity" id="filter_clarityWS2" onclick="filter_clarity('WS2')">VVS2</li>
-<li class="filter_clarity" id="filter_clarityVS1" onclick="filter_clarity('VS1')">VS1</li>
-<li class="filter_clarity" id="filter_clarityVS2" onclick="filter_clarity('VS2')">VS2</li>
-<li class="filter_clarity" id="filter_claritySI1" onclick="filter_clarity('SI1')">SI1</li>
-<li class="filter_clarity" id="filter_claritySI2" onclick="filter_clarity('SI2')">SI2</li>
-</ul>
-</div>
-
-
-
-
-
-<div class="filter_line">
-<span class="filter_title">价格</span>
-<div id="filter_line_price">
-<input type="text" id="price_from" /> - <input type="text" id="price_to" /> (美元) <button type="button" id="btn_price">更新结果</button>
-</div>
-</div>
-</div><!-- end filterbox leftside -->
-
-<div class="filter-box-rightside">
-
-<div class="filter_line">
-<span class="filter_title">切工</span>
-<ul>
-<li class="filter_cut" id="filter_cutEX" onclick="filter_cut('EX')">EX</li>
-<li class="filter_cut" id="filter_cutVG" onclick="filter_cut('VG')">VG</li>
-<li class="filter_cut" id="filter_cutG" onclick="filter_cut('G')">G</li>
-<li class="filter_cut" id="filter_cutF" onclick="filter_cut('F')">F</li>
-</ul>
-</div>
-
-<div class="filter_line">
-<span class="filter_title">抛光</span>
-<ul>
-<li class="filter_polish" id="filter_polishEX" onclick="filter_polish('EX')">EX</li>
-<li class="filter_polish" id="filter_polishVG" onclick="filter_polish('VG')">VG</li>
-<li class="filter_polish" id="filter_polishG" onclick="filter_polish('G')">G</li>
-<li class="filter_polish" id="filter_polishF" onclick="filter_polish('F')">F</li>
-</ul>
-</div>
-
-<div class="filter_line">
-<span class="filter_title">对称</span>
-<ul>
-<li class="filter_sym" id="filter_symEX" onclick="filter_sym('EX')">EX</li>
-<li class="filter_sym" id="filter_symVG" onclick="filter_sym('VG')">VG</li>
-<li class="filter_sym" id="filter_symG" onclick="filter_sym('G')">G</li>
-<li class="filter_sym" id="filter_symF" onclick="filter_sym('F')">F</li>
-</ul>
-</div>
-
-<div class="filter_line">
-<span class="filter_title">证书</span>
-<ul>
-<li class="filter_certi" id="filter_certiIGI" onclick="filter_certi('IGI')">IGI</li>
-<li class="filter_certi" id="filter_certiHRD" onclick="filter_certi('HRD')">HRD</li>
-<li class="filter_certi" id="filter_certiGIA" onclick="filter_certi('GIA')">GIA</li>
-</ul>
-</div>
-
-
-<div class="filter_line" id="filter_line_searchbycertinumber">
-<span class="filter_title">查询</span>
-<input type="text" id="numbersearch" placeholder="证书编号/库存编号" /> <button type="button" id="btn_certificatenumbersearch" onclick="searchbynumbers()">查询</button>
-</div>
-
-</div><!-- end filterbox rightside -->
-
-<br style="clear:both;" />
-
-</div><!-- end filter box -->
-
-
-
-<div class="main_contentbox_dia_data" id="diamondscontentbox_data" >
-
-<div id="tableheader">
-<p id="listdescription">为您找到 <span id="resulthowmany">0</span> 条结果:    <span id="dia-page-selector">第 <span id="diapagenavi">1</span> 页</span> <!--<span id="more">更多》</span>--></p>
-
-</div>
-
-
-<div id="diamondsdata">
-
-
-</div>
-
-</div><!-- end diamondscontentbox -->
-
-
-</div><!-- end themaincontentinner -->
-</div><!-- end themaincontent -->
-
-
-<div id="loading_indi" style="position:fixed; top:0; left:0; width:100%; height:100%; background-color:#FFF; background-color:rgba(255, 255, 255, 0.7); z-index:6; display:none;">
-<p style="position:relative; top:50%; margin-top:-50px; width:128px; height:70px; margin-left:auto; margin-right:auto; text-align:center; background-color:#FFF; padding-top:20px; border-radius:8px;"><img width="25px" src="../images/site_elements/loadingGraphic.gif" /><br /><span style="position:relative; left:8px; display:inline-block; margin-top:12px;">载入中...</span></p>
-</div>
-
-
-
-
 <script type="text/javascript">
 var $featured='NO';
 
@@ -620,7 +603,7 @@ function filter_cut(thegrade){
 	var $thecutgrade=thegrade;
 	var $or='';
 	$cut='';
-	
+
 	if($thecutgrade=='EX'){
 		if($cutEX){
 			$cutEX=false;
@@ -654,7 +637,7 @@ function filter_cut(thegrade){
 			$('#filter_cutF').addClass('btn-active');
 		}
 	}
-	
+
 	if($cutEX){
 		$cut+=' cut_grade = "EX" ';
 		$or= ' OR ';
@@ -671,8 +654,8 @@ function filter_cut(thegrade){
 		$cut+=$or+' cut_grade = "F" ';
 		$or= ' OR ';
 	}
-	
-	
+
+
 	update();
 }
 
@@ -684,7 +667,7 @@ function filter_polish(thegrade){
 	var $thepolishgrade=thegrade;
 	var $or='';
 	$polish='';
-	
+
 	if($thepolishgrade=='EX'){
 		if($polishEX){
 			$polishEX=false;
@@ -718,7 +701,7 @@ function filter_polish(thegrade){
 			$('#filter_polishF').addClass('btn-active');
 		}
 	}
-	
+
 	if($polishEX){
 	    $polish+=' polish = "EX" ';
 		$or= ' OR ';
@@ -746,7 +729,7 @@ function filter_sym(thegrade){
 	var $thesymgrade=thegrade;
 	var $or='';
 	$sym='';
-	
+
 	if($thesymgrade=='EX'){
 		if($symEX){
 			$symEX=false;
@@ -780,7 +763,7 @@ function filter_sym(thegrade){
 			$('#filter_symF').addClass('btn-active');
 		}
 	}
-	
+
 	if($symEX){
 		$sym+=' symmetry = "EX" ';
 		$or= ' OR ';
@@ -808,7 +791,7 @@ function filter_certi(thelab){
 	var $thecerti=thelab;
 	var $or='';
 	$certi='';
-	
+
 	if($thecerti=='IGI'){
 		if($certiIGI){
 			$certiIGI=false;
@@ -834,7 +817,7 @@ function filter_certi(thelab){
 			$('#filter_certiHRD').addClass('btn-active');
 		}
 	}
-	
+
 	if($certiIGI){
 		$certi+=' grading_lab = "IGI" ';
 		$or= ' OR ';
@@ -847,7 +830,7 @@ function filter_certi(thelab){
 		$certi+=$or+' grading_lab = "HRD" ';
 		$or= ' OR ';
 	}
-	
+
 	update();
 }
 
@@ -935,7 +918,7 @@ function update(){
 			$('span#resulthowmany').html(howmanyrecords);
 			diamondlistpagenavi(howmanyrecords);
 			addlisteners();
-			
+
 			$('button#btn_weight').removeClass('weight-btn-active');
 		}
 	);
@@ -961,7 +944,7 @@ function searchbynumbers(){
 			$('span#resulthowmany').html(howmanyrecords);
 			diamondlistpagenavi(howmanyrecords);
 			addlisteners();
-			
+
 			$('button#btn_weight').removeClass('weight-btn-active');
 		}
 	);
@@ -993,25 +976,32 @@ function diamondlistpagenavi(howmanyrecords){
 	}
 }
 </script>
-
 <script type="text/javascript" src="../fancyBox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+  $("#numbersearch").keydown(function(e){
+    var curKey = e.which;
+    if(curKey == 13){
+      $("#btn_certificatenumbersearch").click();
+      return false;
+    }
+  });
+
 	addlisteners();
 <?php
-if(isset($_GET['ref']) && $_GET['ref']=='round'){
-?>
+if (isset ( $_GET ['ref'] ) && $_GET ['ref'] == 'round') {
+	?>
 	$('#roundbtn').css({'border-bottom-style':'solid', 'border-width':'2px'});
 	filter_shape("BR");
 <?php
-}else if(isset($_GET['ref']) && $_GET['ref']=='featured'){
-?>
+} else if (isset ( $_GET ['ref'] ) && $_GET ['ref'] == 'featured') {
+	?>
 	$('#featuredbtn').css({'border-bottom-style':'solid','border-width':'2px'});
 	$featured='YES';
 	update();
 <?php
-}else if(isset($_GET['ref']) && $_GET['ref']=='special'){
-?>
+} else if (isset ( $_GET ['ref'] ) && $_GET ['ref'] == 'special') {
+	?>
 	$('#specialbtn').css({'border-bottom-style':'solid','border-width':'2px'});
 	$shapePS=true;
 	$shapePR=true;
@@ -1066,13 +1056,13 @@ function addlisteners(){
 
 		update();
 	});
-	
+
 	$('span.detail-btn').unbind().click(function(){
 		var clicked_main_obj=$(this).parent('.generalinfobox').parent('div.dia-piece-box');
 		$('div.details').slideUp();
 		clicked_main_obj.children('div.details').slideDown();
 	});
-	
+
 }
 
 
