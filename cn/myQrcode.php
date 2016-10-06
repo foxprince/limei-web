@@ -101,12 +101,10 @@ if (isset ( $feedbackmessage )) {
 }
 ?>
 
-<h3>
-          我的二维码 <a
-            style="font-size: 14px; display: inline-block; margin-left: 25px; padding: 5px 12px; background-color: #eee; position: relative; top: -3px;"
-            href="myaccount.php">我的钻戒</a>
-        </h3>
+<h3>我的二维码</h3>
         <a
+          style="font-size: 14px; display: inline-block; margin-left: 25px; padding: 5px 12px; background-color: #eee; position: relative; top: -3px;"
+          href="myaccount.php">我的钻戒</a><a
           style="font-size: 14px; display: inline-block; margin-left: 25px; padding: 5px 12px; background-color: #eee; position: relative; top: -3px;"
           href="manageaccount.php">修改用户名密码</a>
 
@@ -114,10 +112,11 @@ if (isset ( $feedbackmessage )) {
 <?php
 if ($r_u ['qrcode']) {
 	?>
-			<a id="qr_image" href="../admin/qrcode/<?php echo $row['qrcode'] ?>" target="_blank">查看</a><br />
         <div class="history-choice">
-          <img src="../_admin/qrcode/<?php echo $r_u['qrcode']; ?>" class="demo-pic" />
+          您的专属二维码如下，您可以将此二维码发给您的好友分享 <img src="../_admin/qrcode/<?php echo $r_u['qrcode']; ?>" class="demo-pic" /> <br
+            style="clear: both;" />
           <div class="dia-para-box">
+            使用您的二维码关注利美钻石的好友有：<br />
             <?php
 	$sql_history = 'SELECT wechat_name FROM clients_list WHERE referee = "' . $r_u ['id'] . '"';
 	foreach ( $conn->query ( $sql_history ) as $row_history ) {
@@ -126,7 +125,6 @@ if ($r_u ['qrcode']) {
 	?>
           </div>
           <!-- end dia-para-box -->
-          <br style="clear: both;" />
         </div>
 <?php
 } else {
