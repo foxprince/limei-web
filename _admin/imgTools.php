@@ -1,8 +1,11 @@
 <?php
 // by MoreWindows (http://blog.csdn.net/MoreWindows )
+$CImage = new CImage ();
+// $CImage->CreateThumbnail ( $local_file, 200, 200, $thumbnail );
 class CImage {
 	/**
 	 * 生成保持原图纵横比的缩略图，支持.png .
+	 *
 	 *
 	 * jpg .gif
 	 * 缩略图类型统一为.png格式

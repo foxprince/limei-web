@@ -33,12 +33,12 @@ function createQrCode($theaccesstoken, $id) {
 	
 	$filename = "./qrcode/" . $id . ".jpg";
 	$local_file = fopen ( $filename, 'w' );
-	$thumbnail = fopen ( "./qrcode/" . $id . "_200x200.jpg", 'w' );
+	$thumbnail = "./qrcode/" . $id . "_200x200.jpg";
 	if (false !== $local_file) {
 		if (false !== fwrite ( $local_file, $imageInfo ["body"] )) {
 			fclose ( $local_file );
 			$CImage = new CImage ();
-			$CImage->CreateThumbnail ( $local_file, 200, 200, $thumbnail );
+			$CImage->CreateThumbnail ( $filename, 200, 200, $thumbnail );
 			return $filename;
 		}
 	}
