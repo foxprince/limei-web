@@ -3,7 +3,7 @@ require_once ('./log.php');
 if (isset ( $_POST ['id'] )) {
 	require_once ('../manage/getaccesstoken2015.php');
 	require_once ('../includes/connection.php');
-	require_once ('imgTools.php');
+	require_once ('./imgTools.php');
 	$conn = dbConnect ( 'write', 'pdo' );
 	$conn->query ( "SET NAMES 'utf8'" );
 	
@@ -37,7 +37,8 @@ function createQrCode($theaccesstoken, $id) {
 	if (false !== $local_file) {
 		if (false !== fwrite ( $local_file, $imageInfo ["body"] )) {
 			fclose ( $local_file );
-			CreateThumbnail ( $local_file, 200, 200, $thumbnail );
+			$CImage = new CImage ();
+			$CImage->CreateThumbnail ( $local_file, 200, 200, $thumbnail );
 			return $filename;
 		}
 	}

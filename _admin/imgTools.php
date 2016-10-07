@@ -3,13 +3,14 @@
 class CImage {
 	/**
 	 * 生成保持原图纵横比的缩略图，支持.png .
+	 *
 	 * jpg .gif
 	 * 缩略图类型统一为.png格式
 	 * $srcFile 原图像文件名称
 	 * $toW 缩略图宽
 	 * $toH 缩略图高
 	 * $toFile 缩略图文件名称，为空覆盖原图像文件
-	 * 
+	 *
 	 * @return bool
 	 */
 	public static function CreateThumbnail($srcFile, $toW, $toH, $toFile = "") {
