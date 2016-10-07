@@ -67,7 +67,7 @@ $(document).ready(function(){
 				if($.trim(data)=='OK'){
 					alert('生成成功');
 					$('td[id='+btnId+']').focus().select();
-					$('td[id='+btnId+']').html('<a id="qr_image" href="./qrcode/'+btnId+'.jpg" target="_blank" title="点击查看大图"><span style="color: red"><img src="./qrcode/'+btnId+'_200x200.jpg"/></span></a>');
+					$('td[id='+btnId+']').html('<a id="qr_image" href="./qrcode/'+btnId+'.jpg" target="_blank" title="点击查看大图"><span style="color: red"><img width="100" height="100" src="./qrcode/'+btnId+'_200x200.jpg"/></span></a>');
 				}else{
 					alert('Server is busy, please try later!');
 				}
@@ -212,7 +212,8 @@ foreach ( $ooh as $row ) {
 			$num = $row_history ['num'];
 		}
 		?>
-		<a id="qr_image" href="./qrcode/<?php echo $row['qrcode'] ?>" target="_blank">查看</a><br /> 共有<a
+		<a id="qr_image" title="点击查看大图" href="./qrcode/<?php echo $row['qrcode'] ?>" target="_blank"><img width="100"
+          height="100" src="./qrcode/<?php echo $row['qrcode'] ?>_200x200.jpg" /></a><br /> 共有<a
         href="clients.php?referee=<?php echo $row['id'] ?>"><?php echo $num ?></a><br /> <a href="#"
         id="<?php echo $row['id'] ?>" class="createQrcode">重新生成</a>
 
@@ -255,7 +256,7 @@ foreach ( $ooh as $row ) {
 <?php
 echo "共" . $result_number . "条纪录，总" . $tpages . "页。";
 include ("pagination2.php");
-echo paginate_two ( $reload, $page, $tpages, $adjacents);
+echo paginate_two ( $reload, $page, $tpages, $adjacents );
 ?>
 </p>
 </body>
