@@ -213,7 +213,7 @@ foreach ( $ooh as $row ) {
 		}
 		?>
 		<a id="qr_image" title="点击查看大图" href="./qrcode/<?php echo $row['qrcode'] ?>" target="_blank"><img width="100"
-          height="100" src="./qrcode/<?php echo $row['qrcode'] ?>_200x200.jpg" /></a><br /> 共有<a
+          height="100" src="./qrcode/<?php echo $row['id'] ?>_200x200.jpg" /></a><br /> 共有<a
         href="clients.php?referee=<?php echo $row['id'] ?>"><?php echo $num ?></a><br /> <a href="#"
         id="<?php echo $row['id'] ?>" class="createQrcode">重新生成</a>
 
