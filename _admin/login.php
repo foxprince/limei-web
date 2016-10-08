@@ -1,11 +1,11 @@
-<?php 
+<?php
 $error='';
 if(isset($_POST['login'])){
     session_start();
 	$password=$_POST['pwd'];
-	if($password=='limei_diamond2014'){
+	if($password=='P@4Lzs2016!'){
 		    $_SESSION['authenticated']='SiHui';
-			session_regenerate_id();			
+			session_regenerate_id();
 	}else{
 		if(isset($_SESSION['authenticated'])){
 			$_SESSION=array();
@@ -21,9 +21,9 @@ if(isset($_POST['login'])){
 			exit('');
 		}
 	}
-		
+
 	$error='Invalid username or password';
-	
+
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -95,14 +95,14 @@ if($error){
 ?>
 
 <form id="loginform" method="post" action="">
-    
+
     <p style="text-align:center;">
         <label for="pwd">Password:</label>
         <input type="password" name="pwd" id="pwd">
         <input name="login" type="submit" id="login" value="Login">
     </p>
-    
-        
+
+
 </form>
 </body>
 </html>
