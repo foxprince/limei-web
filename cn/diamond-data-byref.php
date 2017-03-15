@@ -16,7 +16,7 @@ $conn->query("SET NAMES 'utf8'");
 
 
 
-$sql='SELECT * FROM diamonds WHERE visiable=1 AND stock_ref LIKE "'.$numbertosearch.'" OR certificate_number = "'.$numbertosearch.'"';
+$sql='SELECT * FROM diamonds WHERE visiable=1 AND (stock_ref LIKE "'.$numbertosearch.'" OR certificate_number = "'.$numbertosearch.'")';
 
 //exit($sql);
 
