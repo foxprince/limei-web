@@ -46,6 +46,7 @@ $conn->query("SET NAMES 'utf8'");
   ga('send', 'pageview');
 
 </script>
+<script>
 <!--百度seo自动推送 -->
 (function(){
     var bp = document.createElement('script');
