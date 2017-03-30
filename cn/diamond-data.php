@@ -165,7 +165,8 @@ switch ($sorting){
 	break;
 
 	default:
-	$query_sorting =' ORDER BY stock_ref '.$sorting_direction;
+	//$query_sorting =' ORDER BY stock_ref '.$sorting_direction;
+	$query_sorting =' ORDER BY price '.$sorting_direction;
 	break;
 
 }
