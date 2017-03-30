@@ -151,7 +151,7 @@ switch ($sorting){
 	case "color":
 	$query_sorting =' ORDER BY color '.$sorting_direction;
 	break;
-
+	
 	case "clarity":
 	$query_sorting =' ORDER BY clarity_number '.$sorting_direction;
 	break;
@@ -161,12 +161,12 @@ switch ($sorting){
 	break;
 
 	case "price":
-	$query_sorting =' ORDER BY price '.$sorting_direction;
+	$query_sorting =' ORDER BY retail_price '.$sorting_direction;
 	break;
 
 	default:
 	//$query_sorting =' ORDER BY stock_ref '.$sorting_direction;
-	$query_sorting =' ORDER BY price '.$sorting_direction;
+	$query_sorting =' ORDER BY retail_price '.$sorting_direction;
 	break;
 
 }
