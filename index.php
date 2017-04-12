@@ -18,7 +18,7 @@ exit();
 <link rel="stylesheet" href="../styles/index-cn.css"/>
 <link rel="stylesheet" href="../assets/css/style.css"/>
 <link rel="stylesheet" href="../styles/diamonds-1.css"/>
-<link rel="stylesheet" href="/code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
 <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 <link rel="stylesheet" href="../styles/diamonds.css"/>
 <link rel="stylesheet" href="../styles/buttons.css"/>
