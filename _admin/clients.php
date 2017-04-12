@@ -57,6 +57,11 @@ td {
 <link rel="stylesheet" href="/fancyBox/source/jquery.fancybox.css" />
 <script type="text/javascript">
 $(document).ready(function(){
+	$("img.qrImg").click(function(){
+		var qrImg=$(this).attr('id')+".jpg";
+		htmlobj=$.ajax({url:"./qrcode/"+qrImg,async:false});
+		$("#myDiv"+$(this).attr('id')).html(htmlobj.responseText);
+	});
 	$("a.createQrcode").click(function() {
 		$(this).html('<img width="25px" src="../images/site_elements/loadingGraphic.gif" />');
 		$(this).removeClass("createQrcode");
@@ -212,10 +217,12 @@ foreach ( $ooh as $row ) {
 			$num = $row_history ['num'];
 		}
 		?>
-		<a id="qr_image" title="点击查看大图" href="./qrcode/<?php echo $row['qrcode'] ?>" target="_blank"><img width="100"
-          height="100" src="./qrcode/<?php echo $row['id'] ?>_200x200.jpg" /></a><br /> 共有<a
-        href="clients.php?referee=<?php echo $row['id'] ?>"><?php echo $num ?></a><br /> <a href="#"
-        id="<?php echo $row['id'] ?>" class="createQrcode">重新生成</a>
+		
+		<a id="qr_image" title="点击查看大图" href="./qrcode/<?php echo $row['qrcode'] ?>" target="_blank"></a>
+		<img class="qrImg" id="<?php echo $row['id'] ?>" width="100" height="100" src="./qrcode/<?php echo $row['id'] ?>_200x200.jpg" /><br /> 
+          共推荐<a href="clients.php?referee=<?php echo $row['id'] ?>"><?php echo $num ?></a>用户<br/> 
+          <div id="myDiv<?php echo $row['id'] ?>"></div>
+        <a href="#" id="<?php echo $row['id'] ?>" class="createQrcode">重新生成</a>
 
 	<?php
 	} else {

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Untitled Document</title>
-<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css" >
+<link rel="stylesheet" href="http://releases.flowplayer.org/5.4.6/skin/minimalist.css" >
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
 </head>

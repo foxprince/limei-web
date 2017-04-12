@@ -23,7 +23,7 @@ $conn->query("SET NAMES 'utf8'");
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta content="The only one company owned by Chinese in Antwerp Diamond Club, Belgium. Expert of custom wedding rings. Help to build up your ideal and unique diamond rings. Every diamond goes with GIA, HRD or IGI certificate. Professional service in Europe, China and Hong Kong." name="description">
 <link href="../styles/main_en.css?v=<?php echo strtotime('now'); ?>" media="screen" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css" >
+<link rel="stylesheet" href="http://releases.flowplayer.org/5.4.6/skin/minimalist.css" >
 <script src="http://edecenter.com/lab/jquery-1.11.2.min.js"></script>
 <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
 <script type="text/javascript" src="../jscontrol.js?v=<?php echo strtotime('now'); ?>"></script>

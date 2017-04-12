@@ -11,7 +11,7 @@ $conn->query("SET NAMES 'utf8'");
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="../styles/main.css?v=<?php echo strtotime('now'); ?>" media="screen" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css" />
+<link rel="stylesheet" href="http://releases.flowplayer.org/5.4.6/skin/minimalist.css" />
 
 <!---调用css---->
 <link rel="stylesheet" href="/styles/bootstrap.min.css?v=17"/>

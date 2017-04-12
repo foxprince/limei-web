@@ -16,13 +16,13 @@ $conn->query("SET NAMES 'utf8'");
 <title>比利时钻石,安特卫普钻石 - 利美钻石</title>
 <meta content="比利时钻石,安特卫普钻石" name="keywords" />
 <meta name="description" content="利美钻石主营产品：比利时钻石，安特卫普钻石，利美钻石婚戒定制专家，为您专业定制独一无二的钻戒，每颗钻石都配有国际钻石证书，清晰的解释，贴心的建议和优惠的价格是利美对您的承诺，作为华人的购钻渠道，利美钻石将竭诚为您的选择提供最专业的服务。"/>
-<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css" />
+<link rel="stylesheet" href="http://releases.flowplayer.org/5.4.6/skin/minimalist.css" />
 <!---调用css---->
 <link rel="stylesheet" href="../styles/bootstrap.min.css?v=17"/>
 <link rel="stylesheet" href="../styles/index-cn.css"/>
 <link rel="stylesheet" href="../assets/css/style.css"/>
 <link rel="stylesheet" href="../styles/diamonds-1.css"/>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
 <link rel="stylesheet" href="../fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 <link rel="stylesheet" href="../styles/diamonds.css"/>
 <link rel="stylesheet" href="../styles/buttons.css"/>
