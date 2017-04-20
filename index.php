@@ -1,6 +1,6 @@
 <?php
 $HOST=$_SERVER['HTTP_HOST'];
-if ($HOST=="lumiagem.com"){
+if ($HOST=="lumiagem.com"||$HOST=="www.lumiagem.be"){
 Header("HTTP/1.1 301 Moved Permanently");
 Header("Location:http://www.lumiagem.com"); 
 exit();
@@ -88,8 +88,9 @@ function closePopUp(){
 </script>
 
 
-
+<!--  
 <script type="text/javascript">var bqsem_protocol = "http%3A//www.";document.write(unescape("%3Cspan id=%22bqsem_com%22%3E%3C/span%3E%3Cscript%20type%3D%22text/javascript%22%20src%3D%22"+ bqsem_protocol +"sousuoniu.com/e/173df48ad0839f14.js%22%3E%3C/script%3E"));</script>
+-->
 </body>
 </html>
 <?php
