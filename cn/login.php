@@ -7,8 +7,8 @@ if(isset($_SESSION['useraccount'])){
 }
 
 if(isset($_POST['username']) && isset($_POST['password'])){
-	$username=$_POST['username'];
-	$password=$_POST['password'];
+	$username=addslashes($_POST['username']);
+	$password=addslashes($_POST['password']);
 	
 	require_once('../includes/connection.php');
 	$conn=dbConnect('write','pdo');

@@ -22,10 +22,10 @@ if (isset ( $_POST ['usernamenew'] ) && isset ( $_POST ['passwordold'] ) && isse
 	
 	// exit('post');
 	
-	$usernamenew = $_POST ['usernamenew'];
-	$passwordold = $_POST ['passwordold'];
-	$passwordnew = $_POST ['passwordnew'];
-	$passwordnewrepeat = $_POST ['passwordnewrepeat'];
+	$usernamenew=addslashes($_POST['usernamenew']);
+	$passwordold=addslashes($_POST['passwordold']);
+	$passwordnew=addslashes($_POST['passwordnew']);
+	$passwordnewrepeat=addslashes($_POST['passwordnewrepeat']);
 	
 	if ($passwordnewrepeat != $passwordnew) {
 		$errormessage = '两次输入的新密码不一致，请重新输入';
