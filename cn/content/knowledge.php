@@ -40,7 +40,7 @@ foreach($stmt as $row){
 ?>
 <li class="newspiece">
 <a class="imglinker" href="guide.php?p=article&ref=knowledge&id=<?php echo $row['id']; ?>">
-<img class="article_img" src="<?php echo $row['main_image_ch']; ?>" />
+<img class="article_img" src="<?php echo $row['main_image_ch']; ?>" alt="比利时钻石购买攻略"/>
 </a>
 <a class="txtlinker" href="guide.php?p=article&ref=knowledge&id=<?php echo $row['id']; ?>">
 <?php echo $row['title_ch']; ?>

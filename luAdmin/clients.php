@@ -146,7 +146,7 @@ foreach ( $conn->query ( $totalSql ) as $num ) {
 	$result_number = $num [0];
 }
 $tpages = intval ( $result_number / $pagesize );
-if (! $numrows % $pagesize)
+if (! $result_number % $pagesize)
 	$tpages ++;
 $adjacents = intval ( $_GET ['adjacents'] );
 if ($page <= 0)
