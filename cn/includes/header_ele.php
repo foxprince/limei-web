@@ -20,8 +20,8 @@ exit();
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <head>
-<meta content="比利时钻石,安特卫普钻石 安特卫普钻石劫案 比利时钻石品牌推荐 最便宜的钻石 性价比最高" name="keywords" />
-<meta name="description" content="利美钻石主营产品：比利时钻石，安特卫普钻石，利美钻石婚戒定制专家，为您专业定制独一无二的钻戒，每颗钻石都配有国际钻石证书，清晰的解释，贴心的建议和优惠的价格是利美对您的承诺，作为华人的购钻渠道，利美钻石将竭诚为您的选择提供最专业的服务。"/>
+<meta content="比利时钻石,安特卫普钻石 比利时钻石品牌推荐 最便宜的钻石 性价比最高" name="keywords" />
+<meta name="description" content="利美钻石主营产品：比利时钻石，安特卫普钻石，利美钻石婚戒定制专家，为您专业定制独一无二的钻戒，每颗钻石都配有国际钻石证书，清晰的解释，贴心的建议和优惠的价格是利美对您的承诺，作为华人的购钻渠道，利美钻石将竭诚为您的选择提供最专业的服务。并为您提供比利时钻石购买攻略。"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta content="width=device-width" name="viewport">
 <link rel="stylesheet" href="http://releases.flowplayer.org/5.4.6/skin/minimalist.css" />
