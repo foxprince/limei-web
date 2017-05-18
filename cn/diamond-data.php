@@ -174,7 +174,7 @@ switch ($sorting){
 
 include_once('../log.php');
 require_once('../includes/connection.php');
-$conn=dbConnect_dia('write','pdo');
+$conn=dbConnect('write','pdo');
 $conn->query("SET NAMES 'utf8'");
 
 $sql_currency='SELECT * FROM convert_currency';

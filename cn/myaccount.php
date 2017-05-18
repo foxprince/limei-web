@@ -148,7 +148,7 @@ $historyfound = $stmt_history->rowCount ();
 if ($historyfound) {
 	
 	include_once ('../includes/connection.php');
-	$conn_dia = dbConnect_dia ( 'write', 'pdo' );
+	$conn_dia = dbConnect ( 'write', 'pdo' );
 	$conn_dia->query ( "SET NAMES 'utf8'" );
 	
 	foreach ( $stmt_history as $row_history ) {

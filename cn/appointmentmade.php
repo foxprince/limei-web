@@ -23,7 +23,7 @@ if(isset($_POST['thetotalprice'])){
 ###########################################################
 
 include_once('../includes/connection.php');
-$conn_dia=dbConnect_dia('write','pdo');
+$conn_dia=dbConnect('write','pdo');
 $conn_dia->query("SET NAMES 'utf8'");
 
 
