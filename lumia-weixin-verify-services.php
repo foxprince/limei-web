@@ -83,7 +83,7 @@ class wechatCallbackapiTest
 							
 							$contentStr='系统尚未找到您的用户名和密码';
 							
-							require_once('includes/connection_user.php');
+							require_once('includes/connection.php');
 							$conn=dbConnect('write','pdo');
 							$conn->query("SET NAMES 'utf8'");		
 							
@@ -119,7 +119,7 @@ class wechatCallbackapiTest
 					
 					
 					
-					require_once('includes/connection_user.php');
+					require_once('includes/connection.php');
 					$conn=dbConnect('write','pdo');
 					$conn->query("SET NAMES 'utf8'");		
 					
@@ -238,7 +238,7 @@ class wechatCallbackapiTest
 				#################################################################################################################################################
 				
 				######################################################
-				require_once('includes/connection_user.php');        #
+				require_once('includes/connection.php');        #
 				$conn=dbConnect('write','pdo');                      # database connected here 
 				$conn->query("SET NAMES 'utf8'");                    #
 				######################################################

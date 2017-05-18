@@ -33,7 +33,7 @@ if($_SESSION['authenticated']!='SiHui'){
 require_once('../includes/connection.php');
 $conn=dbConnect('write','pdo');
 $conn->query("SET NAMES 'utf8'");
-include_once('../includes/connection-dia-data.php');
+include_once('../includes/connection.php');
 $conn_dia=dbConnect_dia('write','pdo');
 $conn_dia->query("SET NAMES 'utf8'");
 require_once('log.php');

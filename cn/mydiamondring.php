@@ -13,7 +13,7 @@ $dia_id=$_SESSION['dia_id'];
 $ring_id=$_SESSION['ringChoice'];
 ###########################################################
 
-include_once('../includes/connection-dia-data.php');
+include_once('../includes/connection.php');
 $conn_dia=dbConnect_dia('write','pdo');
 $conn_dia->query("SET NAMES 'utf8'");
 

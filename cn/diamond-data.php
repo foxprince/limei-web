@@ -173,7 +173,7 @@ switch ($sorting){
 
 
 include_once('../log.php');
-require_once('../includes/connection-dia-data.php');
+require_once('../includes/connection.php');
 $conn=dbConnect_dia('write','pdo');
 $conn->query("SET NAMES 'utf8'");
 
