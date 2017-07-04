@@ -26,16 +26,15 @@
 
 	$mail->From = "service@lumiagem.com"; //邮件发送者email地址
 	$mail->FromName = "lumiagem";
-	$mail->AddAddress($address, "dwqs");//收件人地址，可以替换成任何想要接收邮件的email信箱,格式是AddAddress("收件人email","收件人姓名")
 	//$mail->AddReplyTo("", "");
 
 	//$mail->AddAttachment("/var/tmp/file.tar.gz"); // 添加附件
 	//$mail->IsHTML(true); // set email format to HTML //是否使用HTML格式
 	$address = $_POST['toemail'];
-	
+	$mail->AddAddress($address, "dwqs");//收件人地址，可以替换成任何想要接收邮件的email信箱,格式是AddAddress("收件人email","收件人姓名")
 	$mail->Subject = $_POST['title']; //邮件标题
 	$mail->Body = $_POST['content']; //邮件内容
-	mail($address,$_POST['title'].'wwww',$_POST['content']);
+	echo(mail($address,$_POST['title'].'wwww',$_POST['content']));
 	$mail->AltBody = "This is the body in plain text for non-HTML mail clients"; //附加信息，可以省略
 		
 	if(!$mail->send()) {
