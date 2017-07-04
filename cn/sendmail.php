@@ -16,14 +16,16 @@
 	//******************** 配置信息 ********************************
 	  date_default_timezone_set('Asia/Shanghai');//设定时区东八区
 	$mail = new PHPMailer(); //建立邮件发送类
-
+	
+	$mail->isSendmail();
+	/*
 	$mail->IsSMTP(); // 使用SMTP方式发送
 	$mail->CharSet ="UTF-8";//设置编码，否则发送中文乱码
 	$mail->Host = "www.lumiagem.com"; // 您的企业邮局域名
 	$mail->SMTPAuth = true; // 启用SMTP验证功能
 	$mail->Username = "service@lumiagem.com"; // 邮局用户名(请填写完整的email地址)
 	$mail->Password = "123Abc"; // 邮局密码
-
+*/
 	$mail->From = "service@lumiagem.com"; //邮件发送者email地址
 	$mail->FromName = "lumiagem";
 	//$mail->AddReplyTo("", "");
