@@ -17,7 +17,6 @@
 	  date_default_timezone_set('Asia/Shanghai');//设定时区东八区
 	$mail = new PHPMailer(); //建立邮件发送类
 
-	$address = $_POST['toemail'];
 	$mail->IsSMTP(); // 使用SMTP方式发送
 	$mail->CharSet ="UTF-8";//设置编码，否则发送中文乱码
 	$mail->Host = "www.lumiagem.com"; // 您的企业邮局域名
@@ -32,9 +31,11 @@
 
 	//$mail->AddAttachment("/var/tmp/file.tar.gz"); // 添加附件
 	//$mail->IsHTML(true); // set email format to HTML //是否使用HTML格式
-
+	$address = $_POST['toemail'];
+	
 	$mail->Subject = $_POST['title']; //邮件标题
 	$mail->Body = $_POST['content']; //邮件内容
+	mail($address,$_POST['title'].'wwww',$_POST['content']);
 	$mail->AltBody = "This is the body in plain text for non-HTML mail clients"; //附加信息，可以省略
 		
 	if(!$mail->send()) {
