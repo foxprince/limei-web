@@ -20,12 +20,12 @@
 	$address = $_POST['toemail'];
 	$mail->IsSMTP(); // 使用SMTP方式发送
 	$mail->CharSet ="UTF-8";//设置编码，否则发送中文乱码
-	$mail->Host = "smtp.126.com"; // 您的企业邮局域名
+	$mail->Host = "www.lumiagem.com"; // 您的企业邮局域名
 	$mail->SMTPAuth = true; // 启用SMTP验证功能
-	$mail->Username = "lumiagem@126.com"; // 邮局用户名(请填写完整的email地址)
-	$mail->Password = "limei2016"; // 邮局密码
+	$mail->Username = "service@lumiagem.com"; // 邮局用户名(请填写完整的email地址)
+	$mail->Password = "123Abc"; // 邮局密码
 
-	$mail->From = "lumiagem@126.com"; //邮件发送者email地址
+	$mail->From = "service@lumiagem.com"; //邮件发送者email地址
 	$mail->FromName = "lumiagem";
 	$mail->AddAddress($address, "dwqs");//收件人地址，可以替换成任何想要接收邮件的email信箱,格式是AddAddress("收件人email","收件人姓名")
 	//$mail->AddReplyTo("", "");
